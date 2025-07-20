@@ -91,5 +91,3 @@ If you encounter issues:
 - Disable ad-blockers for localhost
 - Clear your browser cache if experiencing unexpected behavior
 
-For additional support, please open an issue on our [GitHub repository](https://github.com/Priyanshigangrade/ReturnShield.Ai-Demo/issues).
-
