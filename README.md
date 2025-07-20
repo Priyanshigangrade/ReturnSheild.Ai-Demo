@@ -1,42 +1,85 @@
-Prerequisites
-Node.js v16+
+ReturnShield.AI Demo - Setup Guide
+For Local Development (ZIP Download Method)
 
-npm/yarn
+#1. Prerequisites
 
-Modern browser (Chrome/Firefox)
+Before beginning, ensure you have these installed:
+Node.js (v16 or later) - Download here
+npm (comes with Node.js) or Yarn - Yarn installation
+Code editor (VS Code recommended)
 
-Installation
-bash
-# Clone the repository
-git clone https://github.com/yourusername/returnshield-ai.git
+#2. Setup Instructions
+Step 1: Extract the ZIP File
 
-# Navigate to project directory
-cd returnshield-ai
+Locate the downloaded ReturnSheild.Ai-Demo.zip file.
+Right-click rightarrow "Extract All" (Windows) or double-click (Mac/Linux).
+Choose your destination folder (e.g., Documents/Projects/).
+              Or 
+Clone the Repository
+git clone https://github.com/Priyanshigangrade/ReturnSheild.Ai-Demo.git
+cd ReturnSheild.Ai-Demo
 
-# Install dependencies
+
+Step 2: Open Project in Terminal
+
+Open your terminal or command prompt.
+Navigate to the project folder:
+Bash
+cd path/to/extracted/folder
+
+
+
+Step 3: Install Dependencies
+Run either of the following commands :
 npm install
-Running Locally
-bash
-# Start development server
-npm run dev
+OR
+yarn install
 
-# Open in browser
-http://localhost:3000
+
+
+Step 4: Configure Environment(Optional)
+Rename .env.example to .env and update variables if needed (e.g., API keys for translation services).
+
+
+
+#3. Running the Application
+Development Mode
+To run the application in development mode, use one of these commands:
+
+npm start
+ OR
+npm run dev
+ OR
+yarn start
+
+
+This will automatically open the application in your browser at http://localhost:3000.
+
+
+
+Test the AI Model
+
+ TensorFlow.js loads automatically. Wait for the console log:
+[AI] TensorFlow.js model loaded successfully.
+
+
+
+
+
+Simulate a Fraud Check
+Seller Side: Upload 3 product images (front, back, label).
+Buyer Side: Upload return image.
+ Click "Check for Fraud" to see the AI comparison result.
+
+
+
+
+
 Production Build
-bash
-# Create optimized build
+To create an optimized production build, run:
+Bash
 npm run build
 
-# Start production server
-npm run preview
-🛠️ Tech Stack
-Frontend: React.js + Vite
 
-Styling: Tailwind CSS
-
-AI Engine: TensorFlow.js
-
-Icons: Lucide React
-
-Local Storage: Browser API
+This command generates optimized files in the build/ folder.
 
