@@ -1,12 +1,23 @@
-# React + Vite
+// Prerequisites
+1. Node.js v16+
+2. npm/yarn
+3. Modern browser (Chrome/Firefox)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+//Installation
+bash
+# Clone the repository
+git clone https://github.com/yourusername/returnshield-ai.git
 
-Currently, two official plugins are available:
+# Navigate to project directory
+cd returnshield-ai
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Install dependencies
+npm install
 
-## Expanding the ESLint configuration
+Running Locally
+bash
+# Start development server
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Open in browser
+http://localhost:
