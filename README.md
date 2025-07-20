@@ -1,85 +1,95 @@
-ReturnShield.AI Demo - Setup Guide
-For Local Development (ZIP Download Method)
+# ReturnShield.AI - Local Setup Guide
 
-#1. Prerequisites
+## Prerequisites
 
-Before beginning, ensure you have these installed:
-Node.js (v16 or later) - Download here
-npm (comes with Node.js) or Yarn - Yarn installation
-Code editor (VS Code recommended)
+Before you begin, ensure your system meets these requirements:
+- **Node.js** (v16 or later) - [Download Node.js](https://nodejs.org/)
+- **npm** (included with Node.js) or **Yarn** - [Yarn installation guide](https://yarnpkg.com/getting-started/install)
+- Code editor (we recommend [Visual Studio Code](https://code.visualstudio.com/))
 
-#2. Setup Instructions
-Step 1: Extract the ZIP File
+## Setup Instructions
 
-Locate the downloaded ReturnSheild.Ai-Demo.zip file.
-Right-click rightarrow "Extract All" (Windows) or double-click (Mac/Linux).
-Choose your destination folder (e.g., Documents/Projects/).
-              Or 
-Clone the Repository
-git clone https://github.com/Priyanshigangrade/ReturnSheild.Ai-Demo.git
-cd ReturnSheild.Ai-Demo
+### Option 1: ZIP Download Method
 
+1. **Extract the ZIP File**
+   - Locate your downloaded `ReturnShield.Ai-Demo.zip` file
+   - Right-click → "Extract All" (Windows) or double-click (Mac/Linux)
+   - Choose your preferred destination folder (e.g., `Documents/Projects/`)
 
-Step 2: Open Project in Terminal
+2. **Open Project in Terminal**
+   ```bash
+   cd path/to/extracted/folder
+   ```
 
-Open your terminal or command prompt.
-Navigate to the project folder:
-Bash
-cd path/to/extracted/folder
+### Option 2: Git Clone Method
 
+```bash
+git clone https://github.com/Priyanshigangrade/ReturnShield.Ai-Demo.git
+cd ReturnShield.Ai-Demo
+```
 
+### Install Dependencies
 
-Step 3: Install Dependencies
-Run either of the following commands :
+Run either of the following commands:
+
+```bash
 npm install
-OR
+# OR
 yarn install
+```
 
+### Configure Environment (Optional)
 
+1. Rename `.env.example` to `.env`
+2. Update any environment variables as needed (e.g., API keys for translation services)
 
-Step 4: Configure Environment(Optional)
-Rename .env.example to .env and update variables if needed (e.g., API keys for translation services).
+## Running the Application
 
+### Development Mode
 
+Start the development server with one of these commands:
 
-#3. Running the Application
-Development Mode
-To run the application in development mode, use one of these commands:
-
+```bash
 npm start
- OR
+# OR
 npm run dev
- OR
+# OR
 yarn start
+```
 
+The application will automatically open in your default browser at:
+[http://localhost:3000](http://localhost:3000)
 
-This will automatically open the application in your browser at http://localhost:3000.
+### Testing the AI Model
 
+1. The TensorFlow.js model loads automatically
+2. Check your browser's console for the success message:
+   ```
+   [AI] TensorFlow.js model loaded successfully.
+   ```
 
+### Simulating a Fraud Check
 
-Test the AI Model
+1. **Seller Side**: Upload 3 product images (front, back, label)
+2. **Buyer Side**: Upload return images
+3. Click **"Check for Fraud"** to view the AI comparison results
 
- TensorFlow.js loads automatically. Wait for the console log:
-[AI] TensorFlow.js model loaded successfully.
+## Building for Production
 
+To create an optimized production build:
 
-
-
-
-Simulate a Fraud Check
-Seller Side: Upload 3 product images (front, back, label).
-Buyer Side: Upload return image.
- Click "Check for Fraud" to see the AI comparison result.
-
-
-
-
-
-Production Build
-To create an optimized production build, run:
-Bash
+```bash
 npm run build
+```
 
+This generates production-ready files in the `build/` directory.
 
-This command generates optimized files in the build/ folder.
+## Troubleshooting
+
+If you encounter issues:
+- Ensure your browser supports WebGL ([check here](https://webglreport.com/))
+- Disable ad-blockers for localhost
+- Clear your browser cache if experiencing unexpected behavior
+
+For additional support, please open an issue on our [GitHub repository](https://github.com/Priyanshigangrade/ReturnShield.Ai-Demo/issues).
 
